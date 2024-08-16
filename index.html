@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숨고-리디자인</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- aos 연결 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <!-------- header ------ 
+        ------------------------>
+        <header class="header">
+            <div class="inner">
+                <div class="left">
+                    <h1 class="logo">
+                        <a href="#">
+                            <img src="img/logo.svg" alt="숨고">
+                        </a>
+                        <a class="white" href="#">
+                            <img src="img/logo-w.svg" alt="숨고">
+                        </a>
+                    </h1><!-- .logo end -->
+                    <nav class="pc pc_nav">
+                        <ul class="gnb">
+                            <li>
+                                <a href="#" class="depth01">숨고소개</a>
+                                <ul class="depth02">
+                                    <li><a href="#">회사소개</a></li>
+                                    <li><a href="#">채용안내</a></li>
+                                    <li><a href="#">팀블로그</a></li>
+                                </ul><!-- .depth02 end -->
+                            </li>
+                            <li>
+                                <a href="#" class="depth01">고객안내</a>
+                                <ul class="depth02">
+                                    <li><a href="#">이용안내</a></li>
+                                    <li><a href="#">안전정책</a></li>
+                                    <li><a href="#">예상금액</a></li>
+                                    <li><a href="#">고수찾기</a></li>
+                                    <li><a href="#">숨고보증</a></li>
+                                    <li><a href="#">고수에게묻다</a></li>
+                                </ul><!-- .depth02 end -->
+                            </li>
+                            <li>
+                                <a href="#" class="depth01">고수안내</a>
+                                <ul class="depth02">
+                                    <li><a href="#">이용안내</a></li>
+                                    <li><a href="#">고수가이드</a></li>
+                                    <li><a href="#">고수가입</a></li>
+                                </ul><!-- .depth02 end -->
+                            </li>
+                            <li>
+                                <a href="#" class="depth01">고객센터</a>
+                                <ul class="depth02">
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">자주묻는질문</a></li>
+                                </ul><!-- .depth02 end -->
+                            </li>
+                            <li>
+                                <a href="#" class="depth01">마켓</a>
+                                <ul class="depth02">
+                                    <li><a href="#">상품검색</a></li>
+                                </ul><!-- .depth02 end -->
+                            </li>
+                        </ul><!-- .gnb end -->
+                    </nav><!-- .pc_nav end -->
+
+                    <div class="mobile mobile_nav_btn">
+                        <a href="#">
+                            <img src="img/icon-menu.svg" alt="메뉴 전체보기">
+                        </a>
+                        <a href="#" class="white">
+                            <img src="img/icon-close.svg" alt="메뉴 전체보기">
+                        </a>
+                    </div><!-- .mobile_nav_btn end -->
+                    <div class="mobile mobile_nav">
+                        <ul class="gnb">
+                            <li>
+                                <a href="#" class="depth01">숨고소개</a>
+                                <ul class="depth02">
+                                    <li><a href="#">회사소개</a></li>
+                                    <li><a href="#">채용안내</a></li>
+                                    <li><a href="#">팀블로그</a></li>
+                                </ul><!-- .depth02 end -->
+                            </li>
+                            <li>
+                                <a href="#" class="depth01">고객안내</a>
+                                <ul class="depth02">
+                                    <li><a href="#">이용안내</a></li>
+                                    <li><a href="#">안전정책</a></li>
+                                    <li><a href="#">예상금액</a></li>
+                                    <li><a href="#">고수찾기</a></li>
+                                    <li><a href="#">숨고보증</a></li>
+                                    <li><a href="#">고수에게묻다</a></li>
+                                </ul><!-- .depth02 end -->
+                            </li>
+                            <li>
+                                <a href="#" class="depth01">고수안내</a>
+                                <ul class="depth02">
+                                    <li><a href="#">이용안내</a></li>
+                                    <li><a href="#">고수가이드</a></li>
+                                    <li><a href="#">고수가입</a></li>
+                                </ul><!-- .depth02 end -->
+                            </li>
+                            <li>
+                                <a href="#" class="depth01">고객센터</a>
+                                <ul class="depth02">
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">자주묻는질문</a></li>
+                                </ul><!-- .depth02 end -->
+                            </li>
+                            <li>
+                                <a href="#" class="depth01">마켓</a>
+                            </li>
+                        </ul><!-- .gnb end -->
+                    </div><!-- .mobile_nav end -->
+                </div><!-- .left end -->
+
+                <div class="pc pc_util">
+                    <span><a href="#">로그인</a></span>
+                    <span><a href="#">회원가입</a></span>
+                </div><!-- .util end -->
+            </div><!-- .inner end -->
+        </header><!-- .header end -->
+
+        <main>
+            <!-------- main_nav ------ 
+            -------------------------->
+            <div class="main_nav">
+                <div class="inner">
+                    <div class="item">
+                        <a href="#">
+                            <figure><img src="img/icon-전체보기.svg" alt="전체보기"></figure>
+                            <p>전체보기</p>
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <figure><img src="img/icon-이사.svg" alt="이사/청소"></figure>
+                            <p>이사/청소</p>
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <figure><img src="img/icon-수리.svg" alt="설치/수리"></figure>
+                            <p>설치/수리</p>
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <figure><img src="img/icon-인테리어.svg" alt="인테리어"></figure>
+                            <p>인테리어</p>
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <figure><img src="img/icon-외주.svg" alt="외주"></figure>
+                            <p>외주</p>
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <figure><img src="img/icon-이벤트.svg" alt="이벤트/뷰티"></figure>
+                            <p>이벤트/뷰티</p>
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <figure><img src="img/icon-과외.svg" alt="과외"></figure>
+                            <p>과외</p>
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <figure><img src="img/icon-취업.svg" alt="취업/직무"></figure>
+                            <p>취업/직무</p>
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <figure><img src="img/icon-취미.svg" alt="취미/자기계발"></figure>
+                            <p>취미/자기계발</p>
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <figure><img src="img/icon-자동차.svg" alt="자동차"></figure>
+                            <p>자동차</p>
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <figure><img src="img/icon-법률.svg" alt="법률/금융"></figure>
+                            <p>법률/금융</p>
+                        </a>
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <a href="#">
+                            <figure><img src="img/icon-기타.svg" alt="기타"></figure>
+                            <p>기타</p>
+                        </a>
+                    </div><!-- .item end -->
+                </div><!-- .inner end -->
+            </div><!-- .main_nav end -->
+
+            <!-------- main_visual ------ 
+            ----------------------------->
+            <section class="main_visual">
+                <div class="left">
+                    <figure>
+                        <img class="pc" src="img/메인비주얼-pc.jpg" alt="">
+                        <img class="mobile" src="img/메인비주얼-태블릿.jpg" alt="">
+                        <img class="mobile2" src="img/메인비주얼-모바일.png" alt="">
+                    </figure>
+                    <div class="content">
+                        <h2>1,000가지 생활 서비스를 단 한 곳에서</h2>
+                        <div class="search">
+                            <img src="img/icon-search.svg" alt="검색">
+                            <input type="text" name="search" id="search" placeholder="어떤 서비스가 필요하세요?">
+                        </div><!-- .search end -->
+                    </div><!-- .content end  -->
+                </div><!-- .left end -->
+                <div class="right">
+                    <div class="item">
+                        <div class="content">
+                            <a href="#">
+                                <div>
+                                    <img src="img/icon-file.svg" alt="견적 요청">
+                                    <h3>견적 요청</h3>
+                                </div>
+                                <p>서비스 분야를 선택하고 견적을 요청해보세요! <br>
+                                    평균 4개 이상의 견적을 받을 수 있습니다. </p>
+                            </a>
+                        </div><!-- .content end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <div class="content">
+                            <a href="#">
+                                <div>
+                                    <img src="img/icon-person.svg" alt="고수 찾기">
+                                    <h3>고수 찾기</h3>
+                                </div>
+                                <p>지역과 서비스 분야를 선택하고, <br>
+                                    원하는 고수를 찾아 견적을 받아보세요!</p>
+                            </a>
+                        </div><!-- .content end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <div class="content">
+                            <a href="#">
+                                <div>
+                                    <img src="img/icon-tool.svg" alt="고수 가입">
+                                    <h3>고수 가입</h3>
+                                </div>
+                                <p>전문가로 활동하시나요? <br>
+                                    숨고에서 새로운 고객을 만나보세요!</p>
+                            </a>
+                        </div><!-- .content end -->
+                    </div><!-- .item end -->
+                    <div class="item">
+                        <div class="content">
+                            <a href="#">
+                                <div>
+                                    <img src="img/icon-community.svg" alt="커뮤니티">
+                                    <h3>커뮤니티</h3>
+                                </div>
+                                <p>궁금한 점은 숨고 커뮤니티에 물어보세요! <br>
+                                    고수들의 노하우도 알 수 있어요.</p>
+                            </a>
+                        </div><!-- .content end -->
+                    </div><!-- .item end -->
+                </div><!-- right end -->
+            </section><!-- .main_visual end -->
+
+            <!-------- 숨고 GUIDE ------ 
+            ----------------------------->
+            <section class="guide">
+                <div class="inner">
+                    <div class="title">
+                        <h2>숨고 GUIDE</h2>
+                        <!-- 삭제 예정 -->
+                        <div class="more_btn">
+                            <a href="#">
+                                <span>전체보기</span>
+                                <img src="img/icon-더보기.svg" alt="전체보기">
+                            </a>
+                        </div><!-- .more_btn end -->
+                    </div><!-- .title end -->
+
+                    <div class="content">
+                        <div class="item">
+                            <a href="#">
+                                <div class="text">
+                                    <h3>어떤 일이든 <br> 숨고에서 해결하세요</h3>
+                                    <div data-aos="fade-up" class=" text_box">
+                                        <img src="img/말풍선-고객.png" alt="">
+                                        <strong>고객 이용안내 보러가기</strong>
+                                    </div><!-- .text_box end -->
+                                </div><!-- .text end -->
+                                <figure>
+                                    <img src="img/가이드-유저.png" alt="고객 이용안내 보러가기">
+                                </figure>
+                            </a>
+                        </div><!-- .item end -->
+                        <div class="item master">
+                            <a href="#">
+                                <div class="text">
+                                    <h3>더 많은 고용의 기회를 <br> 잡으세요.</h3>
+                                    <div data-aos="fade-up" class=" text_box">
+                                        <img src="img/말풍선-고수.png" alt="">
+                                        <strong>고수 이용안내 보러가기</strong>
+                                    </div><!-- .text_box end -->
+                                </div><!-- .text end -->
+                                <figure>
+                                    <img src="img/가이드-고수.png" alt="고수 이용안내 보러가기">
+                                </figure>
+                            </a>
+                        </div><!-- .item end -->
+                    </div><!-- .content end -->
+                </div><!-- inner end -->
+            </section><!-- .guide end -->
+
+            <!-------- 숨고 인기 서비스 ------ 
+            -------------------------------->
+            <section class="service">
+                <div class="inner">
+                    <div class="title">
+                        <h2>숨고 인기 서비스</h2>
+                        <div class="more_btn">
+                            <a href="#">
+                                <span>전체보기</span>
+                                <img src="img/icon-더보기.svg" alt="전체보기">
+                            </a>
+                        </div><!-- .more_btn end -->
+                    </div><!-- .title end -->
+                    <div class="content">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img_box">
+                                            <figure>
+                                                <img src="img/인기-피아노.jpg" alt="피아노/키보드 레슨">
+                                            </figure>
+                                            <strong>피아노/키보드 레슨</strong>
+                                        </div><!-- .img_box end -->
+                                        <div class="people">
+                                            <img src="img/icon-mail.svg" alt="">
+                                            <p>240,840명 요청</p>
+                                        </div><!-- .people -->
+                                    </a>
+                                </div><!-- .swiper-slide end -->
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img_box">
+                                            <figure>
+                                                <img src="img/인기-골프.jpg" alt="골프 레슨">
+                                            </figure>
+                                            <strong>골프 레슨</strong>
+                                        </div><!-- .img_box end -->
+                                        <div class="people">
+                                            <img src="img/icon-mail.svg" alt="">
+                                            <p>368,893명 요청</p>
+                                        </div>
+                                    </a>
+                                </div><!-- .swiper-slide end -->
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img_box">
+                                            <figure>
+                                                <img src="img/인기-피티.jpg" alt="퍼스널 트레이닝(PT)">
+                                            </figure>
+                                            <strong>퍼스널 트레이닝(PT)</strong>
+                                        </div><!-- .img_box end -->
+                                        <div class="people">
+                                            <img src="img/icon-mail.svg" alt="">
+                                            <p>669,676명 요청</p>
+                                        </div>
+                                    </a>
+                                </div><!-- .swiper-slide end -->
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img_box">
+                                            <figure>
+                                                <img src="img/인기-보컬.jpg" alt="보컬 레슨">
+                                            </figure>
+                                            <strong>보컬 레슨</strong>
+                                        </div><!-- .img_box end -->
+                                        <div class="people">
+                                            <img src="img/icon-mail.svg" alt="">
+                                            <p>454,561명 요청</p>
+                                        </div>
+                                    </a>
+                                </div><!-- .swiper-slide end -->
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img_box">
+                                            <figure>
+                                                <img src="img/인기-수학.jpg" alt="수학 과외">
+                                            </figure>
+                                            <strong>수학 과외</strong>
+                                        </div><!-- .img_box end -->
+                                        <div class="people">
+                                            <img src="img/icon-mail.svg" alt="">
+                                            <p>330,868명 요청</p>
+                                        </div>
+                                    </a>
+                                </div><!-- .swiper-slide end -->
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img_box">
+                                            <figure>
+                                                <img src="img/인기-에어컨.jpg" alt="에어컨 설치 및 수리">
+                                            </figure>
+                                            <strong>에어컨 설치 및 수리</strong>
+                                        </div><!-- .img_box end -->
+                                        <div class="people">
+                                            <img src="img/icon-mail.svg" alt="">
+                                            <p>850,168명 요청</p>
+                                        </div>
+                                    </a>
+                                </div><!-- .swiper-slide end -->
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img_box">
+                                            <figure>
+                                                <img src="img/인기-문수리.jpg" alt="문 설치 및 수리">
+                                            </figure>
+                                            <strong>문 설치 및 수리</strong>
+                                        </div><!-- .img_box end -->
+                                        <div class="people">
+                                            <img src="img/icon-mail.svg" alt="">
+                                            <p>278,512명 요청</p>
+                                        </div>
+                                    </a>
+                                </div><!-- .swiper-slide end -->
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="img_box">
+                                            <figure>
+                                                <img src="img/인기-수도.jpg" alt="수도 관련 설치 및 수리">
+                                            </figure>
+                                            <strong>수도 관련 설치 및 수리</strong>
+                                        </div><!-- .img_box end -->
+                                        <div class="people">
+                                            <img src="img/icon-mail.svg" alt="">
+                                            <p>381,803명 요청</p>
+                                        </div>
+                                    </a>
+                                </div><!-- .swiper-slide end -->
+                            </div>
+                            <div class="swiper_btn">
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- >inner -->
+            </section><!-- .service end -->
+
+            <!-------- 지금 인기 있는 고수 ------ 
+            -------------------------------->
+            <section class="masterSection">
+                <div class="inner">
+                    <div class="title">
+                        <h2>지금 인기 있는 고수</h2>
+                        <div class="more_btn">
+                            <a href="#">
+                                <span>전체보기</span>
+                                <img src="img/icon-더보기.svg" alt="전체보기">
+                            </a>
+                        </div><!-- .more_btn end -->
+                    </div><!-- .title end -->
+                    <ul class="nav">
+                        <li><a href="#">원룸/소형이사</a></li>
+                        <li><a href="#">도배 시공</a></li>
+                        <li><a href="#">용달/화물 운송</a></li>
+                        <li><a href="#">수영 레슨</a></li>
+                    </ul><!-- .nav end -->
+                    <div class="item_wrap">
+                        <div class="item pay">
+                            <div class="content">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/고수-왕창이사.jpg" alt="왕창이사">
+                                    </figure>
+                                    <div class="text">
+                                        <h3>왕창이사(대표 정상훈)</h3>
+                                        <ul>
+                                            <li class="year">경력 25년 · 평균 1시간 내 응답</li>
+                                            <li class="locate">서울 송파구 / 전국 이동가능</li>
+                                        </ul>
+                                    </div><!-- .text end -->
+                                </a>
+                                <div class="btn">
+                                    <a href="#">견적요청</a>
+                                </div><!-- .btn end -->
+                            </div><!-- .content end -->
+
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <div class="content">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/고수-부산몬스터.jpg" alt="부산몬스터트랜스-권팀장-">
+                                    </figure>
+                                    <div class="text">
+                                        <h3>부산몬스터트랜스-권팀장-</h3>
+                                        <ul>
+                                            <li class="year">경력 8년 · 평균 6시간 내 응답</li>
+                                            <li class="locate">부산 남구 / 50km 이동가능</li>
+                                        </ul>
+                                    </div><!-- .text end -->
+                                </a>
+                                <div class="btn">
+                                    <a href="#">견적요청</a>
+                                </div><!-- .btn end -->
+                            </div><!-- .content end -->
+
+                        </div><!-- .item end -->
+                        <div class="item pay">
+                            <div class="content">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/고수-동네방네.jpg" alt="동네방네">
+                                    </figure>
+                                    <div class="text">
+                                        <h3>동네방네</h3>
+                                        <ul>
+                                            <li class="year">경력 20년 · 평균 1시간 내 응답</li>
+                                            <li class="locate">대전 대덕구 / 25km 이동가능</li>
+                                        </ul>
+                                    </div><!-- .text end -->
+                                </a>
+                                <div class="btn">
+                                    <a href="#">견적요청</a>
+                                </div><!-- .btn end -->
+                            </div><!-- .content end -->
+
+                        </div><!-- .item end -->
+                        <div class="item pay">
+                            <div class="content">
+                                <a href="#">
+                                    <figure>
+                                        <img src="img/고수-김기도.jpg" alt="김기도">
+                                    </figure>
+                                    <div class="text">
+                                        <h3>김기도</h3>
+                                        <ul>
+                                            <li class="year">경력8년 · 평균 2시간 내 응답</li>
+                                            <li class="locate">서울 서초구 / 50km 이동가능</li>
+                                        </ul>
+                                    </div><!-- .text end -->
+                                </a>
+                                <div class="btn">
+                                    <a href="#">견적요청</a>
+                                </div><!-- .btn end -->
+                            </div><!-- .content end -->
+
+                        </div><!-- .item end -->
+                    </div><!-- .item_wrap end -->
+                </div><!-- >inner -->
+            </section><!-- .masterSection end -->
+
+            <!-------- 배너 ------ 
+            -------------------------------->
+            <section class="banner">
+                <div class="inner">
+                    <figure class="pc"><a href="#"><img src="img/배너-pc.jpg" alt="숨은 앱으로 더 편하게 고수를 찾아보세요"></a></figure>
+                    <figure class="mobile"><a href="#"><img src="img/배너-태블릿.jpg" alt="숨은 앱으로 더 편하게 고수를 찾아보세요"></a>
+                    </figure>
+                    <figure class="mobile2"><a href="#"><img src="img/배너-모바일.jpg" alt="숨은 앱으로 더 편하게 고수를 찾아보세요"></a>
+                    </figure>
+                </div>
+            </section><!-- banner end -->
+
+            <!-------- 숨은고수 포트폴리오 ------ 
+            -------------------------------->
+            <section class="portfolio">
+                <div class="inner">
+                    <div class="title">
+                        <h2>숨은고수 포트폴리오</h2>
+                        <div class="more_btn">
+                            <a href="#">
+                                <span>전체보기</span>
+                                <img src="img/icon-더보기.svg" alt="전체보기">
+                            </a>
+                        </div><!-- .more_btn end -->
+                    </div><!-- .title end -->
+
+                    <ul class="item_wrap">
+                        <li class="item active">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/포트폴리오-모델.jpg" alt="">
+                                    <div class="text">
+                                        <p>내가 작업한 모델 포토샵 메이크업 헤어 사진</p>
+                                        <h3>부분·피팅모델 알바</h3>
+                                        <div>
+                                            <span class="person">남서연</span>
+                                            <span class="locate">서울 서초구</span>
+                                        </div>
+                                    </div><!-- .text end -->
+                                </figure>
+                            </a>
+                        </li><!-- .item end -->
+                        <li class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/포트폴리오-강아지.jpg" alt="">
+                                    <div class="text">
+                                        <p>견주만 휴가를 가나요, 반려견도 휴가가 필요합니다.</p>
+                                        <h3>기타 알바</h3>
+                                        <div>
+                                            <span class="person">써니</span>
+                                            <span class="locate">서울 강남구</span>
+                                        </div>
+                                    </div><!-- .text end -->
+                                </figure>
+                            </a>
+                        </li><!-- .item end -->
+                        <li class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/포트폴리오-골프.jpg" alt="">
+                                    <div class="text">
+                                        <p>골프란?</p>
+                                        <h3>골프 레슨</h3>
+                                        <div>
+                                            <span class="person">이원비 (Rachel)</span>
+                                            <span class="locate">서울특별시 강남구</span>
+                                        </div>
+                                    </div><!-- .text end -->
+                                </figure>
+                            </a>
+                        </li><!-- .item end -->
+                        <li class="item">
+                            <a href="#">
+                                <figure>
+                                    <img src="img/포트폴리오-이사.jpg" alt="">
+                                    <div class="text">
+                                        <p>⭐️이사청소는 이렇게 진행되요⭐️</p>
+                                        <h3>이사/입주 청소업체</h3>
+                                        <div>
+                                            <span class="person">삐까뻔쩍홈케어</span>
+                                            <span class="locate">서울 송파구</span>
+                                        </div>
+                                    </div><!-- .text end -->
+                                </figure>
+                            </a>
+                        </li><!-- .item end -->
+                    </ul><!-- .item_wrap -->
+                </div><!-- .inner end -->
+            </section><!-- portfolio end -->
+
+            <section class="community">
+                <div class="inner">
+                    <div class="title">
+                        <h2>숨고 커뮤니티에 물어보세요</h2>
+                        <ul class="nav">
+                            <li><a href="#">전체</a></li>
+                            <li><a href="#">질문답변</a></li>
+                            <li><a href="#">고수노하우</a></li>
+                            <li><a href="#">고수소식</a></li>
+                            <li><a href="#">함께해요</a></li>
+                        </ul><!-- .nav end -->
+                        <div class="more_btn top_btn">
+                            <a href="#">
+                                <span>전체보기</span>
+                                <img src="img/icon-더보기.svg" alt="전체보기">
+                            </a>
+                        </div><!-- .more_btn end -->
+                    </div><!-- .title end -->
+
+                    <div class="item_wrap">
+                        <div class="item">
+                            <div class="content">
+                                <a href="#">
+                                    <figure><img src="img/커뮤-시공.jpg" alt="아파트 베란다 누수로인한 페인트 시공"></figure>
+                                    <div class="text">
+                                        <span>질문답변 · 페인트 시공</span>
+                                        <h3>아파트 베란다 누수로인한 페인트 시공</h3>
+                                        <p>제가 윗집이고 (누수로인해) 아랫집 페인트 시공 해줘야 하는데요 부분페인트는 견적이 어느정도 나올까요?? 마음같아서 제가가서 하고 싶은데
+                                            분쟁날까바 업체 찾고 있습니다</p>
+                                    </div><!-- .text end -->
+                                </a>
+                            </div>
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <div class="content">
+                                <a href="#">
+                                    <figure><img src="img/커뮤-pc.jpg" alt="조립PC 구매 도움"></figure>
+                                    <div class="text">
+                                        <span>고수노하우 · 조립PC 구매</span>
+                                        <h3>조립PC 구매 도움</h3>
+                                        <p> 오프라인매장이 살아남을 상황이 많았으면 좋겠네요 ㅎ 조립pc 구매는 컴세상119 조립pc 구매를 하실때는 ssd에 배드색터가 없는지도
+                                            체크하시면
+                                            좋습니다. 컴퓨터 출장수리는 실매장이 있는지 체크하셔야합니다. 컴퓨터 출장수리업체들은 항시 조심하시면 좋겠습다. 실체가없이 ...
+                                        </p>
+                                    </div><!-- .text end -->
+                                </a>
+                            </div>
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <div class="content">
+                                <a href="#">
+                                    <figure><img src="img/커뮤-미용실.jpg" alt="미용실 의자 샴푸대 온수기 세탁기 분리 가능한 분?"></figure>
+                                    <div class="text">
+                                        <span>질문답변 · 철거</span>
+                                        <h3>미용실 의자 샴푸대 온수기 세탁기 분리 가능한 분?</h3>
+                                        <p>가게를 페업하게 되서 가구 가전제품 분리해서 판매하고 싶는데 어떻게 분리하는 지 몰라 문의글 작성하게 되었습니다. 혹시 해당 가전제품 가구
+                                            분리
+                                            가능하신 분 계실까요?</p>
+                                    </div><!-- .text end -->
+                                </a>
+                            </div>
+                        </div><!-- .item end -->
+                    </div><!-- .item_wrap end -->
+                    <div class="more_btn btn_bottom">
+                        <a href="#">
+                            <span>전체보기</span>
+                            <img src="img/icon-더보기.svg" alt="전체보기">
+                        </a>
+                    </div><!-- .more_btn end -->
+                </div><!-- .inner end -->
+            </section><!-- .community end -->
+
+            <section class="story">
+                <div class="inner">
+                    <div class="title">
+                        <h2>숨고 이야기</h2>
+                        <div class="more_btn">
+                            <a href="#">
+                                <span>전체보기</span>
+                                <img src="img/icon-더보기.svg" alt="전체보기">
+                            </a>
+                        </div><!-- .more_btn end -->
+                    </div><!-- .title end -->
+
+                    <div class="item_wrap">
+                        <div class="item">
+                            <a href="#">
+                                <div class="img_box">
+                                    <figure><img src="img/스토리-축구.jpg" alt="18살에 유럽 프로 리그 데뷔전 2위! 축구 레슨 허민영 고수"></figure>
+                                    <span>축구레슨</span>
+                                </div><!-- .img_box end -->
+                                <div class="text">
+                                    <h3>🔭 18살에 유럽 프로 리그 데뷔전 2위! 축구 레슨 허민영 고수</h3>
+                                    <span>2024. 06. 07</span>
+                                </div><!-- .text end -->
+                            </a>
+                        </div><!-- .item end -->
+                        <div class="item">
+                            <a href="#">
+                                <div class="img_box">
+                                    <figure><img src="img/스토리-에어컨.jpg" alt="고객 만족도 200% 보장하는 에어컨 청소"></figure>
+                                    <span>에어컨 청소</span>
+                                </div><!-- .img_box end -->
+                                <div class="text">
+                                    <h3>고객 만족도 200% 보장하는 에어컨 청소</h3>
+                                    <span>2024. 04. 30</span>
+                                </div><!-- .text end -->
+                            </a>
+                        </div><!-- .item end -->
+                    </div><!-- .item_wrap end -->
+                </div><!-- .inner end -->
+            </section><!-- .story end -->
+
+            <section class="sns">
+                <ul>
+                    <li><a href="#"><img src="img/facebook.svg" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="img/instagram.svg" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="img/blog.svg" alt="네이버블로그"></a></li>
+                    <li><a href="#"><img src="img/tstory.svg" alt="티스토리"></a></li>
+                    <li><a href="#"><img src="img/naver.svg" alt="네이버포스트"></a></li>
+                </ul>
+            </section><!-- .sns end -->
+        </main>
+
+        <footer class="footer">
+            <div class="footer_top">
+                <h5 class="footer_logo">
+                    <img src="img/footer-icon.svg" alt="숨고" />
+                </h5><!-- .footer_logo end -->
+                <ul class="footer_menu">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">위치기반 서비스 이용약관</a></li>
+                    <li><a href="#">정보확인맵</a></li>
+                </ul><!-- .footer_menu end -->
+                <ul class="address">
+                    <li>대표이사: KIM ROBIN H</li>
+                    <li>서울특별시 강남구 테헤란로 415, L7 강남타워 5층</li>
+                    <li>support@soomgo.com</li>
+                </ul><!-- .address end -->
+                <p class="rule">(주)브레이브모바일은 통신판매중개자로서 통신판매의 당사자가 아니며 개별 판매자가 제공하는 서비스에 대한 이행, 계약사항 등과 관련한 의무와 책임은
+                    거래당사자에게 있습니다.</p>
+                <ul class="cs">
+                    <li>고객센터: <a href="#">1599-5319</a></li>
+                    <li>평일 10:00 - 18:00 (점심시간 13:00 - 14:00 제외 · 주말/공휴일 제외)</li>
+                </ul><!-- .cs end -->
+            </div><!-- footer_top -->
+            <div class="footer_bottom">
+                <p class="copyright">Copyright ©Brave Mobile Inc. All Rights Reserved.</p>
+            </div><!-- .footer_bottom -->
+        </footer><!-- .footer end -->
+    </div><!-- .wrap end -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+
+            breakpoints: {
+                391: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 20,
+                    centeredSlides: true
+                },
+                541: {
+                    slidesPerView: 2,
+                    spaceBetween: 18,
+                    centeredSlides: false
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 18,
+                    centeredSlides: false
+                },
+
+                1250: {
+                    slidesPerView: 4,
+                    spaceBetween: 28,
+                    centeredSlides: false,
+                }
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/hover.js"></script>
+    <script src="js/header_btn.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
